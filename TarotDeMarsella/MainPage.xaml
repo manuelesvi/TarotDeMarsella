@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TarotDeMarsella.MainPage">
+    <ScrollView Orientation="Both" x:Name="scrollView">
+        <VerticalStackLayout>
+            <HorizontalStackLayout VerticalOptions="Center" Margin="10" Spacing="10">
+                <Label Text="Select Number of Rows:" VerticalOptions="Center" />
+                <Picker x:Name="numberOfRows" />
+            </HorizontalStackLayout>
+            <StackLayout Orientation="Vertical" Margin="20" Spacing="0">
+                <HorizontalStackLayout x:Name="row1"
+                                       Margin="5"
+                                       Spacing="0" />
+                <HorizontalStackLayout x:Name="row2"
+                                       IsVisible="false"
+                                       Margin="5"
+                                       Spacing="0" />
+                <HorizontalStackLayout x:Name="row3"
+                                       IsVisible="false"
+                                       Margin="5"
+                                       Spacing="0" />
+            </StackLayout>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
